@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How in the world do people - pick two</title>
+
+    <meta name="description" content="How in the world do people have a full time job, workout regularly, have a family, contribute to
+    open source, hangout with friends and play video games! - pick two?">
+
+    <meta name="og:image" content="http://tny.im/goh" />
+
+    <style>
+      .form-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10vh;
+      }
+
+      #app {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>How in the world do people:</h1>
+      <p>
+        have a full time job, workout regularly, have a family, contribute to
+        open source, hangout with friends and play video games!?
+      </p>
+      <form action="" class="form-wrap">
+        <label for="a5">
+          <input type="checkbox" id="a5" name="routine" value="workout regularly" onchange="onFormCheckboxChange(event)" />
+          workout regularly
+        </label>
+        <label for="a4">
+          <input type="checkbox" id="a4" name="routine" value="have a family" onchange="onFormCheckboxChange(event)" />
+          have a family
+        </label>
+        <label for="a3">
+          <input type="checkbox" id="a3" name="routine" value="contribute to open source" onchange="onFormCheckboxChange(event)" />
+          contribute to open source
+        </label>
+        <label for="a2">
+          <input type="checkbox" id="a2" name="routine" value="hangout with friends" onchange="onFormCheckboxChange(event)" />
+          hangout with friends
+        </label>
+        <label for="a1">
+          <input type="checkbox" id="a1" name="routine" value="play video games" onchange="onFormCheckboxChange(event)" />
+          play video games
+        </label>
+      </form>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
